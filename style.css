@@ -1,0 +1,148 @@
+/* style the header*/
+.header{
+	padding: 60px;
+	text-align: center;
+	background-color: #036042;
+	color: ghostwhite;
+	margin: 0px;
+}
+/* style the header's text*/
+.header h1{
+	font-size: 100px;
+	font-display: initial;
+	color: ghostwhite;
+	float: top;
+}
+/* style the navbar*/	
+.navbar{
+	background-color: #01b282;
+	overflow: hidden;
+	padding: 20px;
+	text-decoration: none;
+}
+/*the navbar text*/
+.navbar a{
+	display: black;
+	color: ghostwhite;
+	text-decoration: none;
+	padding: 80px 35px;
+}
+/*navbar changes color as it is hoovered on*/
+.navbar a:hover{
+	background-color: beige;
+	color: burlywood;
+}
+/*image is on the right of the page*/
+.sustainible{
+	float: right;
+	padding: 15px;
+}
+/*image is on left of the page*/
+.sustainible2{
+	float: left;
+	padding: 15px;
+}
+/*main body (form) is in the centre of the page*/
+.main{
+	text-align: center !important;
+}
+
+.gallery {
+	--s: 150px; /* to size */
+    --g: 10px;  /* the gap */
+    --f: 1.5;   /* to scale */
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  
+    display: grid;
+    gap: var(--g);
+    width: calc(3*var(--s) + 2*var(--g));
+    aspect-ratio: 1;
+    grid-template-columns: repeat(3,auto);
+}
+.gallery > img {
+	width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .35s linear;
+}
+
+.gallery img:hover{
+    width:  calc(var(--s)*var(--f));
+    height: calc(var(--s)*var(--f));
+}
+
+.gallery1 {
+	--s: 150px; /* to size */
+    --g: 10px;  /* the gap */
+    --f: 1.5;   /* to scale*/ 
+    float: left;
+    width: 50%;
+
+    display: grid;
+    gap: var(--g);
+    width: calc(3*var(--s) + 2*var(--g));
+    aspect-ratio: 1;
+    grid-template-columns: repeat(3,auto);
+}
+.gallery1 > img {
+	width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .35s linear;
+}
+
+.gallery1 img:hover{
+    width:  calc(var(--s)*var(--f));
+    height: calc(var(--s)*var(--f));
+}
+
+.gallery2 {
+	--s: 150px; /* to size */
+    --g: 10px;  /* the gap */
+    --f: 1.5;   /* to scale */
+    float: right;
+    top: 0;
+  
+    display: grid;
+    gap: var(--g);
+    width: calc(3*var(--s) + 2*var(--g));
+    aspect-ratio: 1;
+    grid-template-columns: repeat(3,auto);
+}
+.gallery2 > img {
+	width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .35s linear;
+}
+
+.gallery2 img:hover{
+    width:  calc(var(--s)*var(--f));
+    height: calc(var(--s)*var(--f));
+}
+
+body {
+  place-content: center;
+  background: white;
+}
+
+/*style the footer*/
+footer{
+	padding: 60px;
+	text-align: center;
+	background-color: #036042;
+	color: ghostwhite;
+	bottom: 0px;
+
+}
