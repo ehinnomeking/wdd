@@ -1,0 +1,89 @@
+<!-- Form for webpage -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Shemen's Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js/external.js">
+		
+	</script>
+  </head>
+  <body>
+  	<!--header-->
+  	<div class="header"> <!-- create header class to be able to style it in the css -->
+  		<h1>Sign Up Today!!</h1>
+  		<h3>Help keep a sustainible world and sign up today to receive offer and oppurtunity to keep our work </h3>
+  	</div>
+  	<!-- navbar-->
+  	<div class="navbar"> <!-- create navbar class to be able to style it in the css -->
+  		<a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Game</a>
+        <a href="gallery.html" target="blank">Gallery</a>
+        <a href="form.html" target="blank">Sign Up Today</a>
+    </div>
+    <div class="sustainible"> <!-- create sustainible class to be able to style it in the css -->
+    	<img src="sustain1.png" width="500" height="300"><br><br> <!-- break tages so they can be spaces beween images-->
+    	<img src="sustain4.png" width="500" height="300">
+    </div>
+    <!-- sepreate the images so that they can be side by side  -->
+    <div class="sustainible2"> <!-- create sustainoble2 class to be able to style it in the css -->
+    	<img src="sustain2.png" width="500" height="300"><br><br> <!-- break tages so they can be spaces beween images-->
+    	<img src="sustain3.png" width="500" height="300">
+    </div>
+    
+    <div class="main">  <!-- create main class to be able to style it in the css -->
+
+  	<!-- form -->
+  	<form name="myForm" onsubmit="return validateForm()" method="post"> <!-- js valadation for is connected to an external js file that validates the form being filled-->
+  		<br>
+  		<!-- first name -->
+  		<label for="fname">First name:</label><br><br> <!-- break tages so they can be spaces beween the form question -->
+  		<input type="text" id="fname" name="fname" required><br><br>
+  		<!-- last name -->
+  		<label for="lname">Last name:</label><br><br>
+  		<input type="text" id="lname" name="lname" required><br><br>
+  		<!-- DOB -->
+  		<label for="DOB">Date of Birth:</label><br><br>
+  		<input type="date" id="DOB" name="DOB" required><br><br>
+  		<!-- email -->
+  		<label for="email">Email:</label><br><br>
+  		<input type="email" id="email" name="email" required><br><br>
+  		
+        <!-- phone number -->
+  		<label for="pnum">Phone Number:</label><br><br>
+  		<input type="phone" id="pnum" name="pnum" required><br><br>
+        <!-- gender -->
+        <label for="gender">Gender</label><br><br>
+  	    <input type="radio" id="male" name="gender" value="Male">
+	    <label for="male">Male</label><br>
+	    <input type="radio" id="css" name="gender" value="Female">
+	    <label for="female">Female</label><br>
+	    <input type="radio" id="javascript" name="gender" value="Other">
+	    <label for="other">Other</label><br><br>
+
+	    <!-- country -->
+	    <label for="contry">Contry:</label><br><br>
+	    <input type="contry" id="country" name="country"><br><br>
+
+        
+        <!-- register -->
+        <input type="submit" value="Register">
+
+
+   </form>
+   <br><br><br><br>
+
+   <!-- Footer -->
+	<footer>
+		<h1>Shemen Eroje</h1>
+		<p>This is page was made by Shemen Eroje</p>
+	</footer>
+
+  </body>
+</html>
+
+
+
+
+
